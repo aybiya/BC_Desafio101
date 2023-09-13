@@ -1,0 +1,13 @@
+{
+  "name": "11_desafio",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass",
+    "watch": "sass --watch sass/styles.sass:./styles/styles.css --no-source-map --no-indented"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

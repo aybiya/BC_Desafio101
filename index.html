@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Favicon -->
+  <link rel="sshortcut icon" href="img/favicon.svg">
+  
+  <meta name="authors" content="Aybi YAñez" />
+  <meta name="copyright" content="Ref. to author | todos los derechos reservados" />
+  <meta name="description"
+    content="Desafío 11: realizar calculadora" />
+
+  <!-- links externos -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/normalize.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">rel="stylesheet">
+  
+  <!-- links internos -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+  <title>Calculadora</title>
+</head>
+<!-- fin head -->
+<body>
+  <p id="error-message" class="error-message"></p>
+  <section class="calculator">
+    <header>
+      <div id="display" class="display">0</div>
+    </header>
+    <main>
+      <button id="ac" class="bt ac-bt">AC</button>
+      <button class="bt">/</button>
+      <button id="times" class="bt">*</button>
+      <button class="bt">7</button>
+      <button class="bt">8</button>
+      <button class="bt">9</button>
+      <button class="bt">-</button>
+      <button class="bt">4</button>
+      <button class="bt">5</button>
+      <button class="bt">6</button>
+      <button class="bt">+</button>
+      <button class="bt">1</button>
+      <button class="bt">2</button>
+      <button class="bt">3</button>
+      <button id="cero" class="bt cero-bt">0</button>
+      <button class="bt">.</button>
+      <button id="equal" class="bt equal-bt">=</button>
+    </main>
+  </section>
+  <script defer src="main.js"></script>
+</body>
+<!-- fin body -->
+</html>

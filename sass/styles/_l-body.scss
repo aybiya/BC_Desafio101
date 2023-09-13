@@ -1,0 +1,94 @@
+/* // body */
+
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+body{
+
+    .error-message{
+        color: red;
+        font-family: F.$secondaryFont;
+        font-size: 11px;
+        font-weight: F.$textLight;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .calculator{
+        background-color: C.$bgColor;
+        border-radius: 30px;
+        width: 350px;
+        max-width: 100%;
+        box-shadow: 2px 2px 20px 0.5px rgba(0, 0, 0, 0.296);
+
+        header {
+            top: 0; 
+            left: 0;
+            width: 100%;
+            padding: 1.8rem 2rem;
+            color: C.$bgColor;
+            background-color: C.$headerColor;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+
+            .display{
+                background-color: C.$displayColor;
+                padding: 1rem 1.8rem;
+                font-family: F.$secondaryFont;
+                font-size: F.$textLg;
+                font-weight: F.$textBold;
+                text-align: right;
+                border-radius: 30px;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            :hover.display{
+                cursor: pointer;
+            }
+        } 
+        
+        
+        main {
+            font-size: F.$textSm;
+            font-weight: F.$textRegular;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.8rem;
+            
+            .bt{
+                font-size: F.$textSm;
+                color: C.$displayColor;
+                border: none;
+                border-radius: 35px;
+                padding: 1.2rem 0;
+                background-color: C.$btColor;
+                box-shadow: 2px 2px 20px 0.5px rgba(0, 0, 0, 0.164);
+            }
+
+            :hover.bt{
+                cursor: pointer;
+                background-color: C.$btHoverColor;
+            }
+
+            .ac-bt{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            .equal-bt{
+                grid-column-start: 4;
+                grid-column-end: 5;
+                grid-row-start: 4;
+                grid-row-end: 6;
+            }
+            .cero-bt{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 5;
+                grid-row-end: 6;
+            }
+        } 
+    }
+}
